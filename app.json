@@ -1,0 +1,54 @@
+{
+  "expo": {
+    "name": "Chat App",
+    "slug": "chat-app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/gemini-icon.png",
+    "scheme": "chat-app",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "image": "./assets/images/gemini-icon.png",
+      "resizeMode": "cover",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.francogabriel92.exporouterexample"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/gemini-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.francogabriel92.exporouterexample",
+      "softwareKeyboardLayoutMode": "pan"
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./assets/images/gemini-icon.png"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-font",
+      [
+        "expo-build-properties",
+        {
+          "ios": {
+            "newArchEnabled": true
+          },
+          "android": {
+            "newArchEnabled": true
+          }
+        }
+      ],
+      "expo-web-browser",
+      "expo-audio"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}
